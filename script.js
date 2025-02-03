@@ -15,21 +15,17 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleTemperature() {
         const toCelsius = isFahrenheit;
 
-        // Convert current temperature
         let currentTemp = parseInt(temperature.textContent);
         temperature.textContent = `${convertTemperature(currentTemp, toCelsius)}°${toCelsius ? 'C' : 'F'}`;
 
-        // Convert real feel
         let realFeelTemp = parseInt(realFeel.textContent.match(/\d+/)[0]);
         realFeel.textContent = `Real Feel: ${convertTemperature(realFeelTemp, toCelsius)}°${toCelsius ? 'C' : 'F'}`;
 
-        // Convert overcast
         let overcastTemps = overcast.textContent.match(/\d+/g);
         if (overcastTemps) {
             overcast.textContent = `Overcast: ${convertTemperature(parseInt(overcastTemps[0]), toCelsius)}°${toCelsius ? 'C' : 'F'} / ${convertTemperature(parseInt(overcastTemps[1]), toCelsius)}°${toCelsius ? 'C' : 'F'}`;
         }
 
-        // Convert hourly forecast
         forecastItems.forEach(item => {
             let tempDiv = item.children[2];
             let realFeelDiv = item.querySelector('#real_feel');
@@ -43,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Convert daily forecast
         dailyItems.forEach(item => {
             let tempRange = item.children[3];
             let temps = tempRange.textContent.match(/\d+/g);
