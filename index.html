@@ -1,1 +1,110 @@
-html
+<html>
+    <head>
+        <link href="/styles.css" rel="stylesheet" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        </style>
+    </head>    
+    <body>
+        <div id="app-container">
+            <div id="header">
+                <div id="location">
+                    <img class="forecast-location" src="assets/location.png">
+                    University City</div>
+                <div id="temperature-container">
+                    <div id="overcast">Overcast: 36°C / 30°C</div>
+                    <img id="sun-icon" src="assets/sun.png">
+                    <div id="temperature">34°F</div>
+                    <div id="real-feel">Real Feel: 30°F</div>
+                </div>
+                <button id="toggle-unit">°F / °C</button>
+            </div>
+
+            <div id="weather-details">
+                <div class="detail">
+                    <img class="forecast-detail" src="assets/sun.png">
+                    <br>UV 0 Weak</div>
+                <div class="detail">
+                    <img class="forecast-detail" src="assets/umbrella.png">
+                    <br>Rain <br> 15%</div>
+                <div class="detail">
+                    <img class="forecast-detail" src="assets/wind.png">
+                    <br>Wind <br> 10 mph</div>
+                <div class="detail"> 
+                    <img class="forecast-detail" src="assets/humid.png">
+                    <br> Humidity 60%</div>
+            </div>
+
+            <div id="highlight">Very low pollen count!</div>
+
+            <div id="forecast-container">
+                <div id="forecast">
+                    <div class="forecast-item">
+                        <div>2 PM</div>
+                        <img class="forecast-icon" src="assets/suncloud.png">
+                        <div>34°F</div>
+                        <div>15% Rain</div>
+                        <div id="real_feel">RF: 30°F</div>
+                    </div>
+                    <div class="forecast-item">
+                        <div>3 PM</div>
+                        <img class="forecast-icon" src="assets/cloud1.png">
+                        <div>36°F</div>
+                        <div>10% Rain</div>
+                        <div id="real_feel">RF: 34°F</div>
+                    </div>
+                    <div class="forecast-item">
+                        <div>4 PM</div>
+                        <img class="forecast-icon" src="assets/cloud1.png">
+                        <div>35°F</div>
+                        <div>5% Rain</div>
+                        <div id="real_feel">RF: 34°F</div>
+                    </div>
+                    <div class="forecast-item">
+                        <div>5 PM</div>
+                        <img class="forecast-icon" src="assets/cloud1.png">
+                        <div>32°F</div>
+                        <div>10% Rain</div>
+                        <div id="real_feel">RF: 28°F</div>
+                    </div>
+                    <div class="forecast-item">
+                        <div>6 PM</div>
+                        <img class="forecast-icon" src="assets/cloud1.png">
+                        <div>30°F</div>
+                        <div>5% Rain</div>
+                        <div id="real_feel">RF: 25°F</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="daily-forecast-container">
+                <div id="daily-forecast">
+                    <div class="daily-item">
+                        <div>Jan 1 (Tmrw)</div>
+                        <img class="forecast-icon" src="assets/cloud1.png">
+                        <div></div>
+                        <div>34°F/28°F</div>
+                    </div>
+                    <div class="daily-item">
+                        <div>Jan 2 (Thur.)</div>
+                        <img class="forecast-icon" src="assets/raincloud.png">
+                        <div></div>
+                        <div>36°F/30°F</div>
+                    </div>
+                    <div class="daily-item">
+                        <div>Jan 3   (Fri.)  </div>
+                        <img class="forecast-icon" src="assets/cloud1.png">
+                        <div></div>
+                        <div>38°F/31°F</div>
+                    </div>
+                    <div class="daily-item">
+                        <div>Jan 4 (Sat)</div>
+                        <img class="forecast-icon" src="assets/suncloud.png">
+                        <div></div>
+                        <div>35°F/29°F</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body> 
+</html>

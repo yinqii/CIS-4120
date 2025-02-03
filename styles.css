@@ -1,0 +1,189 @@
+body {
+    background-color: #d3d3d3; /* Light grey background outside the app container */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center align vertically */
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    overflow-y: hidden; /* Disable home screen scroll */
+}
+
+#app-container {
+    width: 375px;
+    max-height: 800px; /* Fixed height to simulate phone screen */
+    background-color: #a9c4e4f7; /* Light blue background inside the app container */
+    border: none;
+    border-radius: 20px;
+    overflow: hidden; /* Remove scrolling here */
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+    position: relative;
+}
+
+#location {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+#toggle-unit {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: white;
+    color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#temperature-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#overcast {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#temperature {
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#real-feel {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+#sun-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+#weather-details {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #e9f1fb;
+    gap: 10px;
+}
+
+.detail {
+    text-align: center;
+    font-size: 12px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+#highlight {
+    background-color: rgba(255, 250, 230, 0.7);
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#forecast-container {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 10px;
+    overflow-x: auto;
+    display: flex;
+    min-height: 120px;
+}
+
+#forecast {
+    display: flex;
+    gap: 10px;
+}
+
+#real_feel{
+    font-size: 9px;
+}
+
+.forecast-item {
+    min-width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.637);
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.forecast-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.forecast-detail {
+    width: 25px;
+    height: 25px;
+}
+
+.forecast-location {
+    width: 15px;
+    height: 15px;
+}
+
+
+#daily-forecast-container {
+    padding: 10px;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 10px;
+    max-height: 300px; 
+}
+
+#daily-forecast {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.daily-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.637);
+    border-radius: 10px;
+    font-size: 14px;
+    min-width: 150px;
+}
